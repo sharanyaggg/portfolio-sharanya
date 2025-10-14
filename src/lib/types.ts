@@ -7,16 +7,15 @@ export type TechDetails = {
   url: string;
 };
 
-export type ExperienceDetails = {
-  logo: string | StaticImageData;
-  darkModeLogo?: string | StaticImageData;
-  logoAlt: string;
+export interface ExperienceDetails {
+  company: string; // 🆕 added this line
   position: string;
   currentlyWorkHere?: boolean;
   startDate: Date;
   endDate?: Date;
   summary: string[];
-};
+}
+
 
 export type ProjectDetails = {
   name: string;

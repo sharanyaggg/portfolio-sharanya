@@ -1,10 +1,10 @@
 import HeroSection from '@/components/sections/hero';
-import ContactSection from '@/components/sections/contact';
 import AboutMeSection from '@/components/sections/about-me';
 import SkillsSection from '@/components/sections/skills';
-import ExperienceSection from '@/components/sections/experiences';
-import TestimonialsSection from '@/components/sections/testimonials';
-import WorkSection from '@/components/sections/work';
+import ExperienceSection from '@/components/sections/work'; // ✅ this is your experience section
+import ProjectsSection from '@/components/sections/projects'; // ✅ make sure this file exists
+import ContactSection from '@/components/sections/contact';
+
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <AboutMeSection />
       <SkillsSection />
       <ExperienceSection />
-      <WorkSection />
-      <TestimonialsSection />
+      <ProjectsSection />
       <ContactSection />
     </>
   );
 }
+

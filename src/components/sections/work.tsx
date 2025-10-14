@@ -1,30 +1,27 @@
-import { PROJECTS } from '@/lib/data';
-import ProjectDetails from '@/components/data-display/project-details';
+import { EXPERIENCES } from '@/lib/data';
+import ExperienceDetails from '@/components/data-display/experience-details';
 import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 
-const WorkSection = () => {
+const ExperienceSection = () => {
   return (
-    <Container id="work">
+    <Container id="experience">
+      <div id="work"></div> {/* ✅ Added to make “Work” button scroll correctly */}
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
-          <Tag label="Work" />
+          <Tag label="Experience" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          Some of the noteworthy projects I have built:
+          A snapshot of my professional journey and key roles I’ve contributed to:
         </Typography>
       </div>
 
-      {PROJECTS?.map((project, index) => (
-        <ProjectDetails
-          key={index}
-          {...project}
-          layoutType={index % 2 === 0 ? 'default' : 'reverse'}
-        />
+      {EXPERIENCES?.map((experience, index) => (
+        <ExperienceDetails key={index} {...experience} />
       ))}
     </Container>
   );
 };
 
-export default WorkSection;
+export default ExperienceSection;

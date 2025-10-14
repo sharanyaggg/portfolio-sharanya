@@ -9,22 +9,27 @@ import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const title = 'Sharanya Gangadharappa | Data Engineer & Analyst | Texas, USA';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
-const url = 'https://sagarshah.dev';
+  'Data Engineer and Analyst skilled in ETL pipelines, BI dashboards, and cloud analytics using Python, SQL, Power BI, AWS, and Azure.';
+const url = 'https://sharanyaggg.vercel.app'; // update after deploying
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    'Data Engineer',
+    'Data Analyst',
+    'ETL Pipelines',
+    'Power BI',
+    'Python',
+    'SQL',
+    'AWS',
+    'Azure',
+    'Tableau',
   ],
-  creator: 'Sagar Shah',
+  creator: 'Sharanya Gangadharappa',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -34,10 +39,13 @@ export const metadata: Metadata = {
     url,
     title,
     description,
-    siteName: title,
+    siteName: 'Sharanya Gangadharappa Portfolio',
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: '/images/open-graph-sharanya.png', // replace with your OG image if available
+        width: 1200,
+        height: 630,
+        alt: 'Sharanya Gangadharappa Portfolio Preview',
       },
     ],
   },
@@ -45,8 +53,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
+    creator: '@sharanyaggg', // optional, can remove if you don’t have Twitter
+    images: '/images/open-graph-sharanya.png',
   },
   icons: {
     icon: '/favicon.ico',
@@ -70,14 +78,13 @@ export default function RootLayout({
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
           ></Script>
-          <Script id="google-anayltics-script">
+          <Script id="google-analytics-script">
             {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', '${googleAnalyticsId}');
-          `}
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${googleAnalyticsId}');
+            `}
           </Script>
         </head>
       ) : null}

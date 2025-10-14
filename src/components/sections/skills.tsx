@@ -16,11 +16,13 @@ const SkillsSection = () => {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
-        {TECHNOLOGIES.map((technology, index) => (
-          <TechDetails {...technology} key={index} />
-        ))}
-      </div>
+      <div className="flex flex-wrap justify-center gap-12 py-6">
+
+  {TECHNOLOGIES.map((technology, index) => (
+    <TechDetails {...technology} key={index} />
+  ))}
+</div>
+
     </Container>
   );
 };

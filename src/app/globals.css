@@ -32,3 +32,11 @@
   --app-gray-900: 249 250 251;
   --app-gray-950: 255 255 255;
 }
+/* Hide scrollbar for clean single-line skill section */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
