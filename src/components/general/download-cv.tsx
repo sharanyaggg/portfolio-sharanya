@@ -7,7 +7,7 @@ const DownloadCV = () => {
     <Button
       onClick={() =>
         window?.open(
-          'https://drive.google.com/file/d/1YngBx3-JHtbpdEe4-ErdQ3ULewoe4iVu/view?usp=sharing',
+          'https://drive.google.com/file/d/12o8_E1SvwuRH-WbryhqnAah4TdeKP9qe/view',
           '_blank'
         )
       }
