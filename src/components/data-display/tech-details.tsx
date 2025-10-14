@@ -1,13 +1,12 @@
 'use client';
 
 import Typography from '@/components/general/typography';
-import Link from '@/components/navigation/link';
 import Image from 'next/image';
-import type { TechDetails } from '@/lib/types';  // 👈 add "type"
+import type { TechDetails } from '@/lib/types';  // 👈 type import only
 
 const TechDetails = ({ logo, darkModeLogo, label, url }: TechDetails) => {
   return (
-    <Link
+    <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
@@ -22,18 +21,14 @@ const TechDetails = ({ logo, darkModeLogo, label, url }: TechDetails) => {
           className="object-contain"
         />
         <Typography
-  variant="body1"
-  className="text-center text-gray-800 dark:text-gray-100 text-base font-semibold tracking-wide"
->
-  {label}
-</Typography>
-
-
-
+          variant="body1"
+          className="text-center text-gray-800 dark:text-gray-100 text-base font-semibold"
+        >
+          {label}
+        </Typography>
       </div>
-    </Link>
+    </a>
   );
 };
-
 
 export default TechDetails;
