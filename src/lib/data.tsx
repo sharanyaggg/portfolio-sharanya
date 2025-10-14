@@ -227,7 +227,7 @@ export const ABOUT = {
   linkedin: 'https://www.linkedin.com/in/sharanya-gangadhar/',
   github: 'https://github.com/sharanyaggg',
   resume:
-    'https://drive.google.com/file/d/1YngBx3-JHtbpdEe4-ErdQ3ULewoe4iVu/view?usp=sharing',
+    'https://drive.google.com/file/d/12o8_E1SvwuRH-WbryhqnAah4TdeKP9qe/view?usp=sharing',
   aboutMe:
     'Data Engineer and Analyst with 2+ years of experience designing ETL pipelines, developing BI dashboards, and leveraging Python, SQL, and cloud platforms to transform data into actionable insights.',
   avatar: AvatarSharanya,
