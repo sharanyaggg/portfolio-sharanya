@@ -130,47 +130,50 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    company: 'Arizona State University',
-    position: 'Graduate Teaching Assistant',
-    startDate: new Date(2024, 6), // July 2024
-    endDate: new Date(2025, 5), // June 2025
+    company: 'Sayam for All',
+    position: 'Data Analyst',
+    startDate: new Date(2025, 7),
+    currentlyWorkHere: true,
     summary: [
-      'Enhanced student performance by 10% by supporting Information Security coursework and simplifying technical concepts.',
-      'Assessed 200+ submissions with 95% grading accuracy ensuring academic data integrity.',
-      'Reduced recurring issues by 15% through tailored academic support and pattern analysis.',
+      'Deployed donor data pipelines into governed analytics layer improving retention visibility by 25% across programs.',
+      'Productionized machine learning models within MLOps pipelines with drift monitoring achieving 75% retention accuracy.',
+      'Validated models using AI-assisted workflows generating actionable insights supporting strategic program decision-making.',
+      'Enhanced donor segmentation models using feature engineering improving targeting precision across multiple fundraising initiatives.',
     ],
   },
   {
-    company: 'Trivent Legal, Inc.',
-    position: 'Data Engineer Intern',
-    startDate: new Date(2024, 4), // May 2024
-    endDate: new Date(2024, 7), // August 2024
+    company: 'Arizona State University',
+    position: 'Data Analyst',
+    startDate: new Date(2024, 7),
+    endDate: new Date(2025, 4),
     summary: [
-      'Built Power BI/Tableau dashboards improving forecasting accuracy by 30%.',
-      'Automated executive reporting reducing delivery time by 20% and decision cycles by 15%.',
-      'Refactored ETL pipelines cutting data discrepancies by 40% and improving scalability.',
+      'Built configuration-driven analytics dashboards from faculty requirements improving student performance outcomes by 10%.',
+      'Engineered grading framework using Excel Pivot formulas ensuring 95% accuracy across 200+ academic submissions.',
+      'Synthesized student behavioral trends into actionable insights enabling faculty interventions and improved academic performance.',
+    ],
+  },
+  {
+    company: 'Trivent Legal',
+    position: 'Data Analyst',
+    startDate: new Date(2024, 5),
+    endDate: new Date(2024, 7),
+    summary: [
+      'Architected predictive pipelines from CRM data through production deployment reducing customer churn by 12%.',
+      'Orchestrated CRM analytics and A/B testing lifecycle improving campaign engagement rates by 15% across segments.',
+      'Optimized data pipelines reducing risk assessment turnaround time by 20% while ensuring production scalability.',
+      'Standardized data governance frameworks improving data quality and ensuring audit-ready compliant reporting systems.',
     ],
   },
   {
     company: 'EXL Service',
-    position: 'Data Engineer',
-    startDate: new Date(2022, 2), // March 2022
-    endDate: new Date(2023, 7), // August 2023
+    position: 'Data Analyst',
+    startDate: new Date(2022, 4),
+    endDate: new Date(2023, 7),
     summary: [
-      'Developed dashboards to track KPIs improving forecasting accuracy by 30%.',
-      'Automated workflows using SQL and AWS Lambda reducing manual workload by 25%.',
-      'Optimized ETL pipelines minimizing data errors by 40%.',
-    ],
-  },
-  {
-    company: 'The Sparks Foundation',
-    position: 'Data Engineer Intern',
-    startDate: new Date(2021, 8),
-    endDate: new Date(2021, 9),
-    summary: [
-      'Refined prediction workflows cutting model complexity by 20% and boosting performance.',
-      'Performed exploratory data analysis reducing costs by 10% through resource optimization.',
-      'Enhanced visualization improving stakeholder understanding by 20%.',
+      'Translated business requirements into BRD and delivered MVP analytics solution improving forecasting accuracy by 30%.',
+      'Constructed scalable ETL pipelines using Snowflake reducing data errors by 40% and improving data reliability.',
+      'Developed proof-of-concept models on Databricks and Spark enabling production deployment using AWS and Azure.',
+      'Designed data marts using Redshift and Azure SQL enabling self-service analytics across business stakeholders.',
     ],
   },
 ];
